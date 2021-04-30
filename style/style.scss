@@ -1,0 +1,57 @@
+body {
+    color: black;
+    font-family: 'Trebuchet MS';
+}
+.background { 
+    background-color: lightgrey;
+    &__grey {
+        background-color: lightgrey;
+    }
+    &__red {
+        background-color: red;
+     }
+    &__orange {
+        background-color: orange;
+    } 
+    &__purple {
+        background-color: purple;
+    }
+    &__green {
+        background-color: green;
+    }
+}
+nav {
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    li {
+        height: 2em;
+        margin: 15px 0px;
+    }
+}
+.menu {
+    width: 20em;
+    display: inline-block;
+    &__icon {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    &__items {
+        visibility: hidden;
+        position: absolute;
+        min-width: 200px;
+        & a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+    }
+}  
+.open-menu {
+    visibility: visible;
+}
